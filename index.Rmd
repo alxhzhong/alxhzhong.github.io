@@ -3,15 +3,26 @@ title: "Alex Zhong"
 favicon: "favicon.ico"
 image: "alex_profilepic.jpeg"
 links:
-  - label: '`r fontawesome::fa("linkedin")` LinkedIn'
+  - label: '`r fontawesome::fa("linkedin", fill = "#0077B5")` LinkedIn'
     url: "https://www.linkedin.com/in/alexhzhong/"
-  - label: '`r fontawesome::fa("github")` GitHub'
+  - label: '`r fontawesome::fa("github", fill = "#000333")` GitHub'
     url: "https://github.com/alxhzhong"
-  - label: '`r fontawesome::fa("envelope")` Email'
+  - label: '`r fontawesome::fa("envelope", fill = "#c71610")` Email'
     url: "mailto:azhong9@jh.edu"
 output:
   postcards::trestles
 ---
+
+```{css, echo = FALSE}
+h2{
+  color: #68ACE5; /*Hopkins blue*/
+}
+```
+
+
+```{r include = FALSE, message = FALSE, warning = FALSE}
+library(fontawesome)
+```
  
 ## Bio
 
@@ -21,6 +32,8 @@ I am a first year [Biostatistics](https://publichealth.jhu.edu/departments/biost
 
 In my free time, I enjoy baking, solving [contest crosswords](https://www.wsj.com/public/resources/documents/crosswordcontestguide.pdf), and catching up on the latest [podcast](https://publichealth.jhu.edu/headlines/public-health-on-call-podcast) episode.
 
+----------
+
 ## Education
 
 **Sc.M. in Biostatistics** | Johns Hopkins Bloomberg School of Public Health *(current)*
@@ -29,12 +42,20 @@ In my free time, I enjoy baking, solving [contest crosswords](https://www.wsj.co
 
 **Associate of Arts** | Oxford College of Emory University
 
+----------
+
+
 ## Experience
 
-**University of Michigan SPH** | [SIBS](https://sph.umich.edu/bdsi/) Participant | June - July 2022
+**University of Michigan SPH** | [SIBS](https://sph.umich.edu/bdsi/) Research Student | June - July 2022
+<!-- We had a cool shinyapps website but it's not working :((-->
+<!-- If I get a chance, I'll try to fix it and post it-->
 
 **Connecticut Agricultural Experiment Station** | Intern | June - August 2021
 
+----------
+
+
 ### Credits
 
-Thank you to Sean Kross for the [postcards](https://cran.r-project.org/package=postcards) package.
+Made using the [postcards](https://cran.r-project.org/package=postcards) package created by Sean Kross.
